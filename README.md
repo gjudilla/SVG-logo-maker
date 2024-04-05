@@ -20,7 +20,7 @@ To test this application, type "npm test" in the command line.
 
 ## Credits
 
-Thank you to my bootcamp instructors and classmates in helping me refine my code. Additionally sought out additional information via w3schools.com.
+Thank you to my bootcamp instructors and classmates in helping me refine my code. Additionally sought out additional information via https://developer.mozilla.org/ and w3schools.com.
 
 ## License
 
