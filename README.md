@@ -1,1 +1,27 @@
 # SVG-logo-maker
+
+## Description
+
+This SVG logo maker is an easy-to-use, Node.js run command-line application that allows users to quickly produce simple scalable vector graphics (SVG)logos for personal use.
+
+## Installation
+
+Clone the repository and install the necessary dependencies by typing in "npm install" in the command line. 
+
+## Usage
+
+After installing the application's dependencies, run this tool by typing "node index.js" into the command line. Following the prompts to render your desired image. 
+
+
+## Tests
+
+To test this application, type "npm test" in the command line. 
+
+
+## Credits
+
+Thank you to my bootcamp instructors and classmates in helping me refine my code. Additionally sought out additional information via w3schools.com.
+
+## License
+
+MIT license. See Git repository for reference. 
