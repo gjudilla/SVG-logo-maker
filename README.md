@@ -6,7 +6,7 @@ This SVG logo maker is an easy-to-use, Node.js run command-line application that
 
 ## Installation
 
-Clone the repository and install the necessary dependencies by typing in "npm install" in the command line. 
+Clone the repository and install the necessary dependencies by typing in "npm install" in the command line. You will need to download programs and packages such as Node.js, Jest and Inquirer.js (version 8.2.4). 
 
 ## Usage
 

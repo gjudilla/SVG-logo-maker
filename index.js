@@ -3,6 +3,7 @@ const inquirer = require ("inquirer");
 const fs = require ("fs");
 
 // TO DO: import shapes
+const { Circle, Triangle, Square } = require('./lib/shapes'); 
 
 // TO DO: Write Questions for user to answer
 
