@@ -5,7 +5,7 @@
 This SVG logo maker is an easy-to-use, Node.js run command-line application that allows users to quickly produce simple scalable vector graphics (SVG)logos for personal use.
 
 Demo video: 
-<!-- Add demo video -->
+https://drive.google.com/file/d/1mnG8S3VYV2VMvvr1m37bhVn8rky_t2Ky/view 
 
 ## Installation
 
