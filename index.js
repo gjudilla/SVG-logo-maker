@@ -4,10 +4,8 @@ const fs = require('fs');
 
 // importing shapes
 const { Circle, Triangle, Square } = require('./lib/shapes.js');
-let renderSvg = '';
 
 // questions for user
-
 inquirer
   .prompt([
     {
@@ -33,22 +31,28 @@ inquirer
     },
   ])
   .then((answers) => {
-    const { logoShape } = answers;
+    const { logoShape, logoText, textColor, shapeColor } = answers;
     let logo;
+
     switch (logoShape) {
       case 'Circle':
-        logo = new Circle(answers.logoText, answers.textColor, answers.shapeColor);
+        logo = new Circle(logoText, textColor, shapeColor);
         break;
       case 'Triangle':
-        logo = new Triangle(answers.logoText, answers.textColor, answers.shapeColor);
+        logo = new Triangle(logoText, textColor, shapeColor);
         break;
       case 'Square':
-        logo = new Square(answers.logoText, answers.textColor, answers.shapeColor);
+        logo = new Square(logoText, textColor, shapeColor);
         break;
     }
+
+    const renderSvg = 
+    `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"> ${logo.render()}
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${textColor}" font-size="65">${logoText}</text>
+    </svg>`;
+
     fs.writeFile('./example/logo.svg', renderSvg, (err) =>
       err ? console.log(err) : console.log('logo.svg generated!'));
-    });
-
+  });
 
 
