@@ -4,6 +4,7 @@ const fs = require('fs');
 
 // importing shapes
 const { Circle, Triangle, Square } = require('./lib/shapes.js');
+let renderSvg = '';
 
 // questions for user
 
@@ -45,11 +46,9 @@ inquirer
         logo = new Square(answers.logoText, answers.textColor, answers.shapeColor);
         break;
     }
-    fs.writeFile('./example/logo.svg', logo.renderSvg(), function (err) {
-      if (err) throw err;
-      console.log('logo.svg generated!');
+    fs.writeFile('./example/logo.svg', renderSvg, (err) =>
+      err ? console.log(err) : console.log('logo.svg generated!'));
     });
-  });
 
 
 
