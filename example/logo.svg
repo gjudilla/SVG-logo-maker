@@ -1,3 +1,3 @@
-<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"> <circle cx="50%" cy= "50%" width ="100%" height ="100%" r="100" fill=""/>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="blue" font-size="65">jec</text>
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"> <polygon points="0,200,300,200,150,0" width ="100%" height ="100%" fill="blue"/>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="red" font-size="65">svg</text>
     </svg>

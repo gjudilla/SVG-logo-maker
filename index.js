@@ -28,21 +28,21 @@ inquirer
       type: 'input',
       name: 'shapeColor',
       message: 'What color would you like your shape to be? Enter color keyword or hexadecimal number.'
-    },
+    }
   ])
   .then((answers) => {
-    const { logoShape, logoText, textColor, shapeColor } = answers;
+    const { logoText, textColor, logoShape, shapeColor } = answers;
     let logo;
 
     switch (logoShape) {
       case 'Circle':
-        logo = new Circle(logoText, textColor, shapeColor);
+        logo = new Circle(shapeColor);
         break;
       case 'Triangle':
-        logo = new Triangle(logoText, textColor, shapeColor);
+        logo = new Triangle(shapeColor);
         break;
       case 'Square':
-        logo = new Square(logoText, textColor, shapeColor);
+        logo = new Square(shapeColor);
         break;
     }
 
